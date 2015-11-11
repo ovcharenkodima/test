@@ -1,0 +1,59 @@
+body {
+  background: #eee;
+}
+html, body {
+	height: 100%;
+}
+.wrapper {
+	margin: 0 auto;
+	max-width: 600px;
+	padding: 20px;
+}
+#board {
+	margin: 100px auto 0 auto;
+	position: relative;
+	height: 0;
+	padding-top: 100%;
+	background: url('../images/board.png') no-repeat 50% 50%;
+	background-size: cover;
+}
+.circle {
+	background: url('../images/nought.png') no-repeat 50% 50%;
+}
+.cross {
+	background: url('../images/cross.png') no-repeat 50% 50%;
+}
+.cell {
+	width: 33.33%;
+	position: absolute;
+	width: 33.33%;
+	padding-top: 33%;
+	top: 0;
+	left: 0;
+	background-size: 60%;
+	background-color: none;
+}
+form {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	right: 20px;
+	bottom: 20px;
+	background: #eee;
+}
+.player1 {
+	z-index: 2;
+}
+.player2 {
+	z-index: 1;
+}
+.radio img {
+	width: 40px;
+}
+#step-owner {
+	font-size: 30px;
+}
+.footnote {
+	margin-top: 50px;
+	font-size: 12px;
+}

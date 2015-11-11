@@ -1,0 +1,10 @@
+{
+  "name": "devpro_test_task",
+  "private": true,
+  "directory": "app/bower_components/",
+  "dependencies": {
+    "jasmine": "~2.3.4",
+    "jasmine-jquery": "~2.1.0"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tic Tac Toe</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- build:css styles/application.css -->
+    <link rel="stylesheet" href="styles/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/libs/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/application.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="row text-center">
+        <div class="col-xs-12"><strong id="step-owner"></strong></div>
+      </div>
+      <div id="board"></div>
+      <div class="footnote">NOTE! I am a responsive game:). Do you like to test me on screen less than 496px??? Shrink your page down to check...</div>
+    </div>
+    <form data-player="1" class="player1" onsubmit="return false;">
+      <div class="form-group">
+        <label for="player1">Player 1 please enter your name</label>
+        <input type="text" name="name" class="form-control" id="player1" placeholder="Name" value="Dima">
+      </div>
+     <label for="player1">Player 1 please select your sign</label>
+      <div class="radio">
+        <label>
+          <input type="radio" name="sign" value="circle" checked="">
+          <img src="images/nought.png" alt="circle" class="img-thumbnail">
+        </label>
+        <label>
+          <input type="radio" name="sign" value="cross" checked="">
+          <img src="images/cross.png" alt="circle" class="img-thumbnail">
+        </label>
+      </div>
+      <button class="btn btn-default">Next</button>
+    </form>
+    <form data-player="2" class="player2" onsubmit="return false;" >
+      <div class="form-group">
+        <label for="player1">Player 2 please enter your name</label>
+        <input type="text" class="form-control" id="player2" placeholder="Name" value="Oleg">
+      </div>
+      <button class="btn btn-default">Let's go!</button>
+    </form>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
